@@ -1,7 +1,8 @@
 # dynamic
  
 This startpage is heavily inspired by this one: https://github.com/2Shrug/mystartpage
-I have made this one from scratch following the given design.
+
+This startpage is made from scratch, but following 2Shrug's design.
 
 # what is dynamic
 The art showcase at the top of the page. Currently it is set album covers of bands I personally like. The program randomly chooses a band and then a random album from this band.
