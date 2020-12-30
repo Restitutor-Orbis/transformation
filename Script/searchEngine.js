@@ -54,6 +54,7 @@ function search(event) {
 
         } else { */
 			//default search
+			//You can change the search engine you prefer here
          	url = 'https://www.google.com/search?q=' + text;
         /*}*/
 

@@ -1,3 +1,10 @@
+// HOW TO EDIT QUOTES
+// The script first chooses a random author and then a random quote from this author.
+// I don't know how to make it automatically fetch the information, so it is hardcoded
+// 1. Change the array of authors to your liking in "getAuthor()"
+// 2. Edit the quotes in "pickQuote". This is the boring, manual work :D
+// 3. You can add as many authors and quotes as you'd like. I don't know when/if performance starts to drop significantly.
+
 function quotePicker() {
    var authors = getAuthors(); //generates array of authors
    
@@ -315,7 +322,7 @@ function pickQuote(author) {
             "A man is more a man through the things he keeps to himself than through those he says.");
             quotes.set("19",
             "Existence is illusory and it is eternal.");
-            quotes.set("19",
+            quotes.set("20",
             "Like great works, deep feelings always mean more than they are conscious of saying.");
             break;
     }

@@ -1,20 +1,36 @@
-function musicPicker() {
-    var bands = getBands(); //generates array of bands
-    
-    var band = pickBand(bands); //randomly picks a band
+//HOW TO EDIT IMAGES
+// 1. Add your images to a folder under Images. You can have more than one.
+// 1. Currently the scripts chooses a folder at random.
+// 1. Change the folders you use in "getFolders()"
+// 2. Change the artists you have in "getArtists()"
+// 3. Change the images for each artist in "pickImage(artist)".
+// 3. These are all hardcoded, so make sure you get the file-name and -type correct 
 
-    console.log(band);
+function artPicker() {
+    var folders = getFolders(); //generates array of folders
+    var folder = pickFolder(folders); //randomly picks a folder
+    var artists = getArtists(); //generates array of artists
+    var artist = pickArtist(artists); //randomly picks an artist
  
     //band = "Aephanemer";
  
-    var image = pickImage(band); //randomly picks an image from the given band
-
-    console.log(image);
+    var image = pickImage(artist); //randomly picks an image from the given arist
  
-    updateImageDisplay(image) //updates UI elements
+    updateImageDisplay(image, folder) //updates UI elements
  }
 
- function getBands() {
+function getFolders() {
+    var folders = ["Albums"];
+    return folders;
+}
+
+function pickFolder(folders) {
+    var choosenFolder = Math.floor((Math.random() * folders.length)); 
+
+    return folders[choosenFolder];
+}
+
+ function getArtists() {
      var bands = ["Aephanemer", "Afsky", "Alcest",
      "Arch Enemy", "Battle Beast", "Hinayana", "Myrkur",
      "Visions of Atlantis", "Wuthering Heights", "Æther Realm"];
@@ -22,17 +38,17 @@ function musicPicker() {
      return bands;
  }
 
-function pickBand(bands) {   
-    var choosenBand = Math.floor((Math.random() * bands.length)); 
+function pickArtist(artists) {   
+    var choosenArtist = Math.floor((Math.random() * artists.length)); 
 
-    return bands[choosenBand];
+    return artists[choosenArtist];
 }
 
 
-function pickImage(band) {
+function pickImage(artist) {
     images = new Map();
 
-    switch(band) {
+    switch(artist) {
         case("Aephanemer"):
             images.set("1",
             "aephanemer_prokopton.jpg");
@@ -94,7 +110,7 @@ function pickImage(band) {
     return images.get(choosenImage);
 }
 
-function updateImageDisplay(image) {
-    document.getElementById("imageDisplayer").style.backgroundImage = "url('./Images/Albums/" + image + "')";
+function updateImageDisplay(image, folder) {
+    document.getElementById("imageDisplayer").style.backgroundImage = "url('./Images/" + folder + "/" + image + "')";
 }
 
