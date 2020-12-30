@@ -1,0 +1,147 @@
+:root {
+    --text-color:#AEAEAE;
+    --background-color: #161616;
+    --highlight-color:#9D7139;
+    --quote-color:#4B4B4B;
+    --author-color:#383838;
+    --secondaryHighligh-color: #800934;
+}
+
+@font-face {
+    font-family: "PowerFont";
+    src: url("../Fonts/ProFont For Powerline.ttf");
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: PowerFont;
+}
+
+
+#imageDisplayer {
+    height: 250px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+    background-image: url("../Images/Albums/aephanemer_prokopton.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: solid 1px var(--text-color);
+}
+
+#imageContainer .text-container {
+    width: auto;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    padding-bottom: 50px;
+
+    font-size: 20px;
+}
+
+#imageContainer .text-container .highlight {
+    color: var(--highlight-color);
+}
+
+#link-boxes {
+    width: 100%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    padding-bottom: 60px;
+}
+
+#link-boxes .linkBox {
+    display:inline-table;
+    width: 200px;
+    text-align: center;
+}
+
+#link-boxes .linkBox ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#link-boxes .linkBox ul li{
+    font-size: 16px;
+}
+
+#link-boxes .linkBox .headerText{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: -7px;
+    color: var(--highlight-color);
+}
+
+#link-boxes .linkBox ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#link-boxes .linkBox ul li a:hover{
+    color: var(--secondaryHighligh-color);
+}
+
+#searchBox{
+    margin:0 auto;
+    width:500px;
+    border-radius:30px;
+    border:1px solid var(--text-color);
+    background-color: white;
+    
+}
+
+#searchBox:hover{
+    box-shadow: 0px 0px 8px 1px var(--text-color);
+}
+
+#searchBox:focus-within{
+    box-shadow: 0px 0px 8px 1px var(--text-color);
+    outline:none;
+}
+
+#searchbar{
+    height:25px;
+    border: none;
+    width:95%;
+    margin-left: 10px;
+    font-size:16px;
+    outline: none;
+    background: none;
+
+    font-size: 10pt;
+    font-style: italic;
+    color: var(--quote-color);
+}
+
+
+#quote-container {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    
+    text-align: right;
+}
+
+#quote-container .text-container{
+    color: var(--quote-color);
+    font-size: 18px;
+}
+
+#quote-container .text-container-quote p{
+    margin-top: -15px;
+    color: var(--author-color);
+}
+
+#quoteAuthor {
+    
+}

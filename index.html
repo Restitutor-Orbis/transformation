@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="MIG">
+        <title>startside</title>
+        <link rel="stylesheet" href="Style/style.css">
+        <script type="text/javascript" src="Script/boardChooser.js"></script>
+        <script type="text/javascript" src="Script/musicChooser.js"></script>
+        <script type="text/javascript" src="Script/quoteChooser.js"></script>
+        <script type="text/javascript" src="Script/searchEngine.js"></script>
+        <link rel="icon" href="Billeder/logo.png">
+    </head>
+
+    <body>
+
+        <section id="mainpage">
+
+            <div id="imageContainer">
+                <div id=imageDisplayer>
+                </div>
+                <div class="text-container">
+                    <p> Velkommen tilbage, <span class="highlight">Villum</span></p>
+                </div>
+            </div>
+
+            <div id="link-boxes">
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Browsing</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.hltv.org/">hltv</a></li>
+                        <li><a href="https://www.twitter.com/">twitter</a></li>
+                        <li><a href="https://old.reddit.com/">plebbit</a></li>
+                        <li><a href="https://www.angrymetalguy.com/">angry metal guy</a></li>
+                    </ul>
+                </div>
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Boards</p>
+                    </div>
+                    <ul>
+                        <li><a id="board1" href="https://www.google.com/">placeholder1</a></li>
+                        <li><a id="board2" href="https://www.google.com/">placeholder2</a></li>
+                        <li><a id="board3" href="https://www.google.com/">placeholder3</a></li>
+                        <li><a id="board4" href="https://www.google.com/">placeholder4</a></li>
+                    </ul>
+                </div>
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Media</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://www.youtube.com/">youtube</a></li>
+                        <li><a href="https://www.twitch.tv/">twitch</a></li>
+                        <li><a href="https://www.netflix.com/">netflix</a></li>
+                        <li><a href="https://open.spotify.com/">spotify</a></li>
+                    </ul>
+                </div>
+                <div class="linkBox">
+                    <div>
+                        <p class=headerText>Uni</p>
+                    </div>
+                    <ul>
+                        <li><a href="https://learnit.itu.dk/local/coursebase/course_catalogue.php">learnit</a></li>
+                        <li><a href="https://github.itu.dk/">github</a></li>
+                        <li><a href="https://itustudent.itu.dk/your-programme/bsc-programmes/bsc-in-software-development">skema</a></li>
+                        <li><a href="https://drive.google.com/drive/u/0/">drive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="searchBox">
+                <input id="searchbar" autocomplete="off" type="text" title="Search" autofocus onkeydown="search(event)" placeholder="">
+            </div>
+
+            <div id="quote-container">
+                <div class="text-container">
+                    <p id="quoteText">Imagination governs the world.</p>
+                </div>
+                <div class="text-container-quote">
+                    <p>~ <span id="quoteAuthor">Napoleon Boneparte</span></p>
+                </div>
+            </div>
+
+            <script>quotePicker()</script>
+            <script>musicPicker()</script>
+            <script>boardPicker()</script>
+
+        </section>
+    </body>
+</html>
